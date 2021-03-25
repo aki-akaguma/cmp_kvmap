@@ -1,0 +1,33 @@
+[package]
+name = "cmp_kvmap"
+version = "0.1.0"
+authors = ["aki <aki.akaguma@hotmail.com>"]
+edition = "2018"
+description = "research: compare the key-value map types"
+keywords = ["algorithm"]
+categories = ["rust-patterns"]
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+
+[features]
+
+[dependencies]
+anyhow = "1.0"
+indexmap = "1.6"
+
+[dev-dependencies]
+criterion = "0.3"
+
+[workspace]
+members = [
+    "xtask",
+]
+
+[[bench]]
+name = "bench-kvm"
+path = "benches/bench-kvm.rs"
+harness = false
+
+#[[bin]]
+#name = "bin-match-string"
+#path = "src/bin-match-string.rs"
