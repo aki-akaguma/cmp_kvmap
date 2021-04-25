@@ -5,18 +5,18 @@ research: compare the key-value map types
 
 |         `name`          |   `bench`   |   `musl`    |
 |:------------------------|------------:|------------:|
-| cmp-std_hashmap-get     |    7.833 us |    9.599 us |
-| cmp-indexmap-get        |    8.786 us |    9.823 us |
-| cmp-std_btreemap-get    |   22.233 us |   34.712 us |
+| cmp-std_hashmap-get     |    9.167 us |   13.599 us |
+| cmp-indexmap-get        |    9.782 us |   13.833 us |
+| cmp-std_btreemap-get    |   23.092 us |   31.758 us |
 
 |         `name`          |   `bench`   |   `musl`    |
 |:------------------------|------------:|------------:|
-| cmp-indexmap-create     |   17.054 us |   19.192 us |
-| cmp-std_hashmap-create  |   24.327 us |   24.904 us |
-| cmp-std_btreemap-create |   35.313 us |   67.690 us |
+| cmp-indexmap-create     |   17.313 us |   19.059 us |
+| cmp-std_hashmap-create  |   24.775 us |   24.661 us |
+| cmp-std_btreemap-create |   35.523 us |   61.599 us |
 
 - `us` is micro seconds, lower is better
-- rustc 1.50.0 (cb75ad5db 2021-02-10)
+- rustc 1.51.0 (2fd73fabe 2021-03-23)
 - bench on intel Q6600 @ 2.40GHz
 
 - [indexmap](https://crates.io/crates/indexmap) - is the iteration order's hash table.
