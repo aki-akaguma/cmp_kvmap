@@ -48,6 +48,8 @@ fn process_indexmap_indexmap_get(
 mod create_data;
 
 fn criterion_benchmark(c: &mut Criterion) {
+    memx_cdy::memx_init();
+    //
     let (v, match_cnt, pat_string_s) = create_data::create_data();
     let vv: Vec<(&str, &str)> = v
         .iter()
