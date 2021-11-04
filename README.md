@@ -3,6 +3,20 @@ research: compare the key-value map types
 
 ## Benchmark Results
 
+- rustc 1.56.1 (59eed8a2a 2021-11-01)
+|         `name`          |   `bench`   |   `musl`    |
+|:------------------------|------------:|------------:|
+| cmp-std_hashmap-get     |   11.111 us |   11.244 us |
+| cmp-indexmap-get        |   11.300 us |   10.552 us |
+| cmp-std_btreemap-get    |   24.809 us |   24.172 us |
+
+|         `name`          |   `bench`   |   `musl`    |
+|:------------------------|------------:|------------:|
+| cmp-indexmap-create     |   18.296 us |   18.280 us |
+| cmp-std_hashmap-create  |   24.902 us |   24.512 us |
+| cmp-std_btreemap-create |   43.851 us |   58.958 us |
+
+
 - rustc 1.53.0 (53cb7b09b 2021-06-17)
 
 |         `name`          |   `bench`   |   `musl`    |
