@@ -1,4 +1,8 @@
 # cmp_kvmap
+
+![Rust Version][rustc-image]
+![Apache2/MIT licensed][license-image]
+
 research: compare the key-value map types
 
 ## Benchmark Results
@@ -55,3 +59,8 @@ research: compare the key-value map types
 It is based on `std::collection::HashMap`.
 
 ## What do you think? :octocat:
+
+[//]: # (badges)
+
+[rustc-image]: https://img.shields.io/badge/rustc-1.56+-blue.svg
+[license-image]: https://img.shields.io/badge/license-Apache2.0/MIT-blue.svg
